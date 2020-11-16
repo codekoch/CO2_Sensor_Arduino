@@ -1,5 +1,6 @@
 # CO2_Sensor_Arduino
 CO2 traffic light warning system based on arduino leonardo
+
 Parts:
 - Arduino leonardo
 - MH-Z19B (CO2-Sensor)
