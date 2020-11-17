@@ -25,22 +25,7 @@ void setup()
   Serial1.begin(BAUDRATE);                               // (Uno example) device to MH-Z19 serial start
   myMHZ19.begin(Serial1);                                // *Serial(Stream) refence must be passed to library begin().
   myMHZ19.autoCalibration();    // Turn auto calibration ON (OFF autoCalibration(false))
-  // Testing sequence (LEDs, Buzzer)
-  red();
-  delay(2000);
-  yellow();
-  delay(2000);
-  green();
-  delay(2000);
-  allColors();  
-  buzz();
-  noColors();
-  delay(500);
-  allColors();
-  buzz();
-  noColors();
-  delay(500);
-  // End of testing sequence
+  testCompnents();
 }
 
 void loop()
@@ -128,4 +113,41 @@ void buzz() {
   tone(BUZZER, 1000); // Send 1KHz sound signal...
   delay(1000);        // ...for 1 sec
   noTone(BUZZER);     // Stop sound...
+}
+void testComponents()
+{
+// Testing sequence (LEDs, Buzzer)
+  getDataTimer = millis();
+  while (millis()-getDataTimer < 20000)
+  {
+  red();
+  delay(500);
+  noColors();
+  delay(500);
+  }
+  getDataTimer = millis();
+  while (millis()-getDataTimer < 20000)
+  {
+  yellow();
+  delay(500);
+  noColors();
+  delay(500);
+  }
+  getDataTimer = millis();
+  while (millis()-getDataTimer < 20000)
+  {
+  green();
+  delay(500);
+  noColors();
+  delay(500);
+  }
+  allColors();  
+  buzz();
+  noColors();
+  delay(500);
+  allColors();
+  buzz();
+  noColors();
+  delay(500);
+  // End of testing sequence
 }
