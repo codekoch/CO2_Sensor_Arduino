@@ -15,5 +15,5 @@ Parts:
 ![CO2Ampel2](https://github.com/codekoch/CO2_Sensor_Arduino/blob/main/CO2Ampel2.jpg)
 ![CO2Ampel3](https://github.com/codekoch/CO2_Sensor_Arduino/blob/main/CO2Ampel3.jpg)
 ![CO2Ampel1](https://github.com/codekoch/CO2_Sensor_Arduino/blob/main/CO2Ampel1.jpg)
-YouTube:
+Video:
 [![Youtube_Video](https://img.youtube.com/vi/AFuJfxH_1Kw/0.jpg)](https://www.youtube.com/watch?v=AFuJfxH_1Kw)
