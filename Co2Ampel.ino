@@ -25,7 +25,7 @@ void setup()
   Serial1.begin(BAUDRATE);                               // (Uno example) device to MH-Z19 serial start
   myMHZ19.begin(Serial1);                                // *Serial(Stream) refence must be passed to library begin().
   myMHZ19.autoCalibration();    // Turn auto calibration ON (OFF autoCalibration(false))
-  testCompnents();
+  testComponents();
 }
 
 void loop()
